@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover outdoor adventures, events, and tours around the world.">
+    <title>Adventure | Explore the World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar" aria-label="Main navigation">
+        <h1 class="logo">ADVENTURE</h1>
+        <button class="menu-btn" type="button" aria-label="Open navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#events">Tours</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="contact-link"><a href="#contact">Contact</a></li>
+            <li><button class="theme-toggle" type="button" aria-pressed="false">Dark Mode</button></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <div class="header-content">
+            <h2>Explore The Colorful World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <a href="#events" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+    <section class="events section" id="events">
+        <div class="title">
+            <h2>Upcoming Events</h2>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <article class="col">
+                <img src="./tour-du-munc-walk.jpg" alt="Hikers walking a mountain trail">
+                <h3>Tour Du Mont Camp Trek</h3>
+                <p>Join us on our upcoming camp trek in the Tour du Mont Blanc, France.</p>
+                <a href="#contact" class="ctn">Learn More</a>
+            </article>
+            <article class="col">
+                <img src="./rafting-slovenia.jpg" alt="White-water rafting in Slovenia">
+                <h3>Rafting Holiday</h3>
+                <p>Join us on an exciting rafting adventure in Slovenia.</p>
+                <a href="#contact" class="ctn">Learn More</a>
+            </article>
+        </div>
+    </section>
+
+    <section class="explore" id="explore">
+        <div class="explore-content">
+            <h2>EXPLORE THE WORLD</h2>
+            <div class="line"></div>
+            <p>Travel around the world with us to explore breathtaking scenes hidden on Earth.</p>
+            <a href="#tours" class="ctn">Learn More</a>
+        </div>
+    </section>
+
+    <section class="tours section" id="about">
+        <div class="row">
+            <div class="col content-col">
+                <h2>UPCOMING TOURS &amp; DESTINATIONS</h2>
+                <div class="line"></div>
+                <p>Join us on our exciting tours around the world.</p>
+                <a href="#contact" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col" id="tours">
+                <div class="image-gallery">
+                    <img src="./colloseum-rome.jpg" alt="The Colosseum in Rome">
+                    <img src="./rainbow-peru.jpg" alt="Rainbow Mountain in Peru">
+                    <img src="./dunes.jpg" alt="Desert sand dunes">
+                    <img src="./pisa-tower.jpg" alt="The Leaning Tower of Pisa">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <p>123 Fifth Avenue, NY 101110, New York, USA | Phone: 093-333-334 | Email: contact@example.com</p>
+        <p>Copyright 2026 Outdoor Adventure</p>
+    </footer>
+
+    <script>
+        // Open or close the mobile navigation menu.
+        const menuButton = document.querySelector('.menu-btn');
+        const menu = document.querySelector('.nav-links');
+        menuButton.addEventListener('click', () => {
+            menu.classList.toggle('mobile-menu');
+        });
+
+        // Turn dark colors on or off.
+        const themeButton = document.querySelector('.theme-toggle');
+        themeButton.addEventListener('click', () => {
+            document.body.classList.toggle('darkmode');
+        });
+    </script>
+</body>
+</html>
+
